@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&family=Open+Sans:400,700&display=swap");
+
+/* Global variable */
+:root {
+  --primary-color: #fa4032;
+  --primary-foreground-color: #fff;
+  --background-color: #ebeaff;
+  --text-color: #424242;
+  --card-bg: #fff;
+}
+
+[data-theme="dark"] {
+  --primary-color: #ff6b61;
+  --primary-foreground-color: #fff;
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --card-bg: #2d2d2d;
+}
+
+/* Global used */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+main h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+/* Header used */
+header {
+  display: inline;
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+
+  color: var(--primary-foreground-color);
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.hero {
+  height: 95vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hero-content h1{
+  display: none;
+}
+
+.hero-logo {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.content{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .content {
+    flex-direction: row;
+  }
+}
+
+.card-holder{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 70%;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--primary-color);
+  color: var(--primary-foreground-color);
+  font-size: 1.5rem;
+}
+
+.card article{
+  padding: 0 20px 0px 20px;
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.character{
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.character .character-photo{
+  flex-basis: 30%;
+}
+.character .character-detail{
+  flex-basis: 70%;
+}
+
+@media (min-width: 768px) {
+  .character {
+    flex-direction: row;
+  }
+}
+
+.character .character-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.card table th,
+.card table td {
+  border: 1px solid var(--background-color);
+  padding: 10px;
+  text-align: left;
+}
+
+.card table th {
+  background-color: var(--primary-color);
+  color: var(--primary-foreground-color);
+}
+
+.manga-pv{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.anime-pv{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+}
+
+iframe{
+  width: 100%;
+}
+
+.content aside{
+  flex-basis: 30%;
+}
+
+.profile-img{
+  padding: 20px 20px 0px 20px;
+}
+
+.profile section{
+  padding: 0px 20px 20px 20px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--primary-foreground-color);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: brightness(0.9);
+}
