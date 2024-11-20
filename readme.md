@@ -1,7 +1,5 @@
 # Dandadan Website Fan Project
 
-<img src="https://github.com/amalrivel/dandadan-fan-website/blob/main/assets/img/dandandan-logo.png" alt="Dandadan Logo" width="300"  />
-
 A responsive website project showcasing information about the Dandadan manga and anime series. This project was built using HTML, CSS, and JavaScript to demonstrate web development skills and responsive design principles.
 
 ## 📋 Features
