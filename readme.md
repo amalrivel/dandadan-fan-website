@@ -10,8 +10,6 @@
 
 This project is a responsive, interactive fan website for the popular manga and anime series "Dandadan" by Yukinobu Tatsu. Built as part of the "Belajar Dasar Pemrograman Web" (Basic Web Programming Learning) course, this website demonstrates modern web development practices including responsive design, theme switching, semantic HTML, and interactive JavaScript elements.
 
-### [Live Demo](#)
-
 ![Dandadan Website Screenshot Placeholder](assets/img/dandadan_1.jpg)
 
 ## ✨ Features
